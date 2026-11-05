@@ -16,5 +16,5 @@ command='python ./scripts/test_tool.py'
 
 [mcp_servers.filesystem]
 command = "npx"
-args = ["-y", "@modelcontextprotocol/server-filesystem", "d:/ai-coding-agent-main"]
+args = ["-y", "@modelcontextprotocol/server-filesystem", "."]
 startup_timeout_sec = 60
