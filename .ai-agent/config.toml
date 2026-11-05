@@ -1,0 +1,20 @@
+hooks_enabled = true
+
+[model]
+name = "nvidia/nemotron-3-super-120b-a12b:free"
+temperature = 0
+
+[[hooks]]
+name='test_before_tool'
+trigger='before_tool'
+command='python ./scripts/test_tool.py'
+
+[[hooks]]
+name='test_before_agent'
+trigger='before_agent'
+command='python ./scripts/test_tool.py'
+
+[mcp_servers.filesystem]
+command = "npx"
+args = ["-y", "@modelcontextprotocol/server-filesystem", "d:/ai-coding-agent-main"]
+startup_timeout_sec = 60

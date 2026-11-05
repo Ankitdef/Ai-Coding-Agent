@@ -1,0 +1,13 @@
+click
+ddgs
+fastmcp
+httpx
+openai
+platformdirs
+pydantic
+rich
+tiktoken
+tomli
+prompt_toolkit
+python-dotenv
+starlette<0.51
